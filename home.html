@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tests</title>
+    <link rel="stylesheet" href="https://unpkg.com/mocha@9.1.3/mocha.css" />
+  </head>
+  <style>
+    .text-center {
+      text-align: center !important;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .titte {
+      font-size: 1.4rem;
+    }
+  </style>
+  <body>
+    <div id="mocha"></div>
+
+    <div class="text-center">
+      <img src="error.png" alt="" width="10%" srcset="">
+      <div class="titte">Nom : Brice Nanyang</div>
+      <div class="titte">Classe : Inge-4 ISI</div>
+      <div class="titte">UE : CI - CD</div>
+    </div>
+
+    <script src="https://unpkg.com/mocha@9.1.3/mocha.js"></script>
+    <script src="https://unpkg.com/chai@4.3.4/chai.js"></script>
+
+    <script>
+      mocha.setup("bdd");
+
+      // mes tests ici
+      describe("Implémentation des Tests : ", function () {
+        it("addition de 02 nombres", function () {
+          chai.assert.equal(1 + 1, 2);
+        });
+
+        it("soustraction de 02 nombres", function () {
+          chai.assert.equal(19 - 8, 11);
+        });
+
+        it("multiplication de 02 nombres", function () {
+          chai.assert.equal(9 * 9, 81);
+        });
+
+        it("division de 02 nombres", function () {
+          chai.assert.equal(27 / 3, 9);
+        });
+      });
+
+      mocha.run();
+    </script>
+  </body>
+</html>

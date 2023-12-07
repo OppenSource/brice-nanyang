@@ -19,13 +19,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      #- name: Setup Node
-      #  uses: actions/setup-node@v2
-      #  with:
-      #    node_version: 18.x
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node_version: 18.x
 
-      #- name: Installer les dépendances
-      #  run: npm install --force
+      - name: Installer les dépendances
+        run: npm install
 
       - name: Installer Versel CLI
         run: npm install --global vercel@latest

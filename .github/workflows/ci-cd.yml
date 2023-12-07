@@ -24,8 +24,8 @@ jobs:
         with:
           node_version: 18.x
 
-      - name: Installer les dépendances
-        run: npm install
+       #- name: Installer les dépendances
+       # run: npm install
 
       - name: Installer Versel CLI
         run: npm install --global vercel@latest
